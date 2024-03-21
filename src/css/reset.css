@@ -9,7 +9,9 @@ p {
   margin: 0;
 }
 
-ul {
+ul,
+ol
+{
   margin: 0;
   padding: 0;
   list-style: none;
@@ -30,27 +32,63 @@ img {
   height: auto;
 }
 
+.body {
+ font-family: "Gilroy", sans-serif;
+ background-color: #fbfbfb;
+ color: rgba(12, 12, 12, 0.7);
+}
+
+.container {
+  max-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 768px)
+{
+  .section {
+    padding: 80px 0;
+  }
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section {
+      padding: 100px 0;
+    }
+  .container {
+    max-width: 1280px;
+    padding: 0 65px;
+  }
+}
 /* Fonts */
 @font-face {
   font-family: "Gilroy", sans-serif;
   font-weight: 600;
   font-style: normal;
-  src: url(/fonts/Gilroy/Gilroy-Semibold.woff),
-    url(/fonts/Gilroy/Gilroy-Semibold.woff2);
+  src: url(/src/fonts/Gilroy/Gilroy-Semibold.woff),
+    url(/src/fonts/Gilroy/Gilroy-Semibold.woff2);
 }
 
 @font-face {
   font-family: "Gilroy", sans-serif;
   font-weight: 500;
   font-style: normal;
-  src: url(/fonts/Gilroy/Gilroy-Medium.woff),
-    url(/fonts/Gilroy/Gilroy-Medium.woff2);
+  src: url(/src/fonts/Gilroy/Gilroy-Medium.woff),
+    url(/src/fonts/Gilroy/Gilroy-Medium.woff2);
 }
 
 @font-face {
   font-family: "Gilroy", sans-serif;
   font-weight: normal;
   font-style: normal;
-  src: url(/fonts/Gilroy/Gilroy-Regular.woff),
-    url(/fonts/Gilroy/Gilroy-Regular.woff2);
+  src: url(/src/fonts/Gilroy/Gilroy-Regular.woff),
+    url(/src/fonts/Gilroy/Gilroy-Regular.woff2);
 }
