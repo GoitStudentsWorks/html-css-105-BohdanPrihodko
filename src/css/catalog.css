@@ -1,0 +1,95 @@
+.catalog-title {
+font-weight: 600;
+font-size: 32px; 
+line-height: 1;
+letter-spacing: -0.02em;
+color: #0c0c0c;
+margin-bottom: 24px;
+}
+.catalog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .catalog-item {
+    background: #f3f3f3;
+    border: 1px solid rgba(12, 12, 12, 0.05);
+    border-radius: 30px;
+    max-width: 335px;
+    height: auto;
+    padding: 24px 28px 24px 28px;
+  }
+
+  .catalog-item-name {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    color: #0c0c0c;
+  }
+  .catalog-item-price {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 400;
+    font-size: 14px; 
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: rgba(12, 12, 12, 0.5);
+  }
+  .btn {
+    min-width: 160px;
+    height: 48px;
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28;
+    text-align: center;
+    background-color: #3350E9;
+    color: #fbfbfb;
+    cursor: pointer;
+    border-radius: 16px;
+    display: block;
+    border: none;
+    padding: 16px 32px;
+    margin: 40px auto 40px auto;
+  }
+
+  @media screen and (max-width: 767px) {
+    .catalog-item.hide-on-mob {
+        display: none;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    
+    .catalog-title {
+        margin-bottom: 40px;
+    }
+    .catalog-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 16px;
+        row-gap: 32px;
+    }
+    .catalog-item {
+        width: calc((100% - 16px) / 2 );
+      }
+      .catalog-item-name {
+        max-width: 280px;
+      }
+  }
+
+  @media only screen and (min-width: 1280px) {
+    .catalog-section {
+        max-width: 1280px;
+    }
+    .catalog-list {
+      column-gap: 23px;
+    }
+    .portfolio-card {
+      width: calc((100% - 46px) / 3);
+    }
+  }
+
