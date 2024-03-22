@@ -11,7 +11,6 @@ margin-bottom: 24px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    align-items:center;
     justify-content:space-between;
   }
 
@@ -23,9 +22,7 @@ margin-bottom: 24px;
     max-height: 414px;
     padding: 24px 28px 24px 28px;
   }
-  .catalog-item-description {
-    margin: 0 auto;
-  }
+
 
   .catalog-item-name {
     font-family: "Gilroy", sans-serif;
@@ -34,10 +31,11 @@ margin-bottom: 24px;
     line-height: 1.25;
     letter-spacing: -0.02em;
     color: #0c0c0c;
-    padding-bottom: 8px;
+    margin-top: 28px;
+    margin-bottom: 8px;
     white-space: nowrap;
     overflow: hidden;
-    
+   
   }
   .catalog-item-price {
     font-family: "Gilroy", sans-serif;
@@ -89,29 +87,33 @@ margin-bottom: 24px;
         row-gap: 32px;
     }
     .catalog-item {
-        width: calc((100% - 16px) / 2 );
+        max-width: calc((100% - 16px) / 2 );
+        padding: 24px 32px 24px 32px;
       }
 
       .catalog-item-name {
         font-size: 20px; 
         line-height: 1;  
-        width: 280px; 
         text-overflow: ellipsis;
+        margin-top: 20px;
+        width: 280px;
+      }
+      .btn {
+        display: none;
       }
   }
 
   @media only screen and (min-width: 1280px) {
 
     .catalog-list {
-      row-gap: 32px;
       column-gap: 23px;
     }
 
     .catalog-item {
-      width: calc((100% - 64px) / 3);
+      max-width: calc((100% - 64px) / 3);
     }
-    .catalog-item-name { 
-      width: 304px; 
+    .catalog-item-name {
+      width: 304px;
     }
   }
 
