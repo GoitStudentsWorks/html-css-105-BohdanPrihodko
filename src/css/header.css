@@ -1,5 +1,6 @@
 .header {
   padding: 20px 0;
+  border-bottom: 1px solid rgba(12, 12, 12, 0.1);
 }
 
 .header-container {
