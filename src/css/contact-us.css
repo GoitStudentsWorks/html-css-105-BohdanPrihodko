@@ -96,13 +96,16 @@ margin-bottom: 28px;
 
 @media only screen and (min-width:768px){
 
+    .contact-us-tittle{
+    font-size: 48px;
+    line-height: 0.91667;
+    margin-bottom: 40px;
+    }
+
    .contact-us-form-container{
     padding: 50px 122px;
    } 
 
-   .contact-us-form-descr{
-    margin-bottom: 32px;
-   }
 
    .contact-us-input-container{
     margin-bottom: 32px;
@@ -123,10 +126,32 @@ margin-bottom: 28px;
     .contact-us-form-descr{
     font-size: 16px;
     line-height: 1.25;
+    margin-bottom: 32px;
 
     }
 
     .contact-us-form-container{
         margin-bottom: 40px;
     }
+
+    .contact-us-textarea{
+        height: 90px;
+    }
+}
+
+@media only screen and (min-width:1280px){
+  .contact-us-container{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .contact-us-form-container{
+    padding-left: 60px;
+    padding-right: 60px;
+    height: 556px;
+    width: 580px;
+    margin-bottom: 0;
+  }
+
 }
