@@ -1,8 +1,14 @@
 <section class="hero">
     <h1>Welcome to our collection of premium watches</h1>
-    <img src="" alt="people">
     <p>Our watches are not just timepieces, but also an expression of your personality and lifestyle. From classic
         designs to
         modern ones, we have a watch to suit every taste and occasion.</p>
-    <button type="button">Scroll down </button>
+    <img src="/img/hero/people-phone.png" alt="people">
+    <button type="button">Scroll down</button>
+    <picture>
+        <source srcset="/img/hero/watch-hero-desktop.png 1x, /img/hero/watch-hero-desktop@2x.png 2x" media="(min-width: 1158px)">
+        <source srcset="/img/hero/watch-hero-tablet.png 1x, /img/hero/watch-hero-tablet@2x.png 2x" media="(min-width: 768px)">
+        <source srcset="/img/hero/watch-hero-phone.png 1x, ./img/hero/watch-hero-phone@2x.png 2x" media="(min-width: 320px)">
+        <img src="/img/hero/watch-hero-phone.png" alt="watch">
+    </picture>
 </section>
