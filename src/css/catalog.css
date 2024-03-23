@@ -12,7 +12,7 @@ margin-bottom: 24px;
     flex-direction: column;
     gap: 20px;
     justify-content:space-between;
-    align-items: center;
+    margin-bottom: 40px;
   }
 
 
@@ -20,7 +20,7 @@ margin-bottom: 24px;
     background: #f3f3f3;
     border: 1px solid rgba(12, 12, 12, 0.05);
     border-radius: 30px;
-    width: 335px;
+    max-width: 335px;
     max-height: 414px;
     padding: 24px 28px 24px 28px;
   
@@ -30,7 +30,6 @@ margin-bottom: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
-
   }
 
 
@@ -45,6 +44,7 @@ margin-bottom: 24px;
     margin-bottom: 8px;
     white-space: nowrap;
     overflow: hidden;
+    max-width: 280px;
    
   }
   .catalog-item-price {
@@ -70,7 +70,8 @@ margin-bottom: 24px;
     display: block;
     border: none;
     padding: 16px 32px;
-    margin: 40px auto 40px auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   .btn:hover,
   .btn:focus {
@@ -106,7 +107,7 @@ margin-bottom: 24px;
         line-height: 1;  
         text-overflow: ellipsis;
         margin-top: 20px;
-        width: 280px;
+       
       }
       .btn {
         display: none;
@@ -123,7 +124,7 @@ margin-bottom: 24px;
       max-width: calc((100% - 64px) / 3);
     }
     .catalog-item-name {
-      width: 304px;
+      max-width: 304px;
     }
   }
 
