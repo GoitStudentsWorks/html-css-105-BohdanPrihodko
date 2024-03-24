@@ -1,6 +1,4 @@
-.advertisement-section{
-    margin-bottom: 60px;
-}
+
 
 .visually-hidden {
     position: absolute;
@@ -26,7 +24,6 @@
     background-size: cover;
     background-position: center;
 }
-
 
 
 @media only screen and (min-resolution:192dpi){
@@ -97,10 +94,6 @@
     
     }
     
-
-    .advertisement-section{
-        margin-bottom: 80px;
-    }
     
 
 }
