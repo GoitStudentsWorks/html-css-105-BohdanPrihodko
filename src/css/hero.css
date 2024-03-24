@@ -1,4 +1,4 @@
-.hero {
+.hero-container {
     padding-top: 60px;
 }
 
@@ -62,7 +62,7 @@
 /* Tablet hero */
 
 @media screen and (min-width: 768px) {
-    .hero {
+    .hero-container {
         padding-top: 80px;
     }
     .box-for-hero {
