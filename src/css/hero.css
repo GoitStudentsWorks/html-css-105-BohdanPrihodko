@@ -1,5 +1,5 @@
 .hero {
-    padding-top: 40px;
+    padding-top: 60px;
 }
 
 .hero-main-title {
@@ -20,6 +20,7 @@
     line-height: 1.28571;
     letter-spacing: -0.02em;
     color: rgba(12, 12, 12, 0.7);
+    width: 99%;
 }
 
 .hero-btn-scroll {
@@ -44,10 +45,9 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 335px;
-    height: 206px;
     margin-bottom: 28px;
 }
+
 
 .hero-second-box {
     display: flex;
@@ -55,4 +55,51 @@
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 28px;
+}
+
+
+
+/* Tablet hero */
+
+@media screen and (min-width: 768px) {
+    .hero {
+        padding-top: 80px;
+    }
+    .box-for-hero {
+        display: flex;
+        justify-content: space-between;
+    }
+    .hero-second-box {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .hero-main-title {
+        font-size: 70px;
+        line-height: 0.85714;
+    }
+
+    .hero-main-text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: -0.02em;
+        width: 480px;
+    }
+    .hero-first-box {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+}
+
+/* Desktop hero */
+
+@media screen and (min-width: 1280px) {
+    .hero-main-title {
+        font-size: 72px;
+        line-height: 0.875;
+    }
+    .hero-main-title { 
+        width: 70%;
+    }
 }
