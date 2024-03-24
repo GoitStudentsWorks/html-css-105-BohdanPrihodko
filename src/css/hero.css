@@ -90,5 +90,16 @@
         margin-bottom: 40px;
         width: 100%;
     }
+}
 
+/* Desktop hero */
+
+@media screen and (min-width: 1280px) {
+    .hero-main-title {
+        font-size: 72px;
+        line-height: 0.875;
+    }
+    .hero-main-title { 
+        width: 70%;
+    }
 }
