@@ -1,10 +1,3 @@
-.about-us {}
-
-.section {}
-
-.container {}
-
-
 
 .about-us-text-cont {
   margin-bottom: 20px;
@@ -13,41 +6,15 @@
   background: #f3f3f3;
   max-width: 335px;
 }
-@media screen and (min-width:768px) {
-  .about-us-text-cont{
-    max-width: 704px;
-    padding: 80px 60px;
-    border-radius: 50px;
-    margin-bottom: 40px;
-  }
-}
-@media screen and (min-width:1280px) {
-  .about-us-text-cont {
-      max-width: 580px;
-      margin-bottom: 0;
-    }
-        .about-us-container {
-          display: flex;
-          gap: 40px;
-        }
-        
-}
+
 
 .about-us-title {
   margin-bottom: 28px;
-  font-family: "Gilroy", sans-serif;
   font-weight: 600;
   font-size: 32px;
   line-height: 1;
   letter-spacing: -0.02em;
   color: #0c0c0c;
-}
-@media screen and (min-width: 768px) {
-  .about-us-title {
-    margin-bottom: 40px;
-    font-size: 48px;
-    line-height: 0.92;
-    }
 }
 
 .about-us-list {
@@ -58,12 +25,7 @@
     color: rgba(12, 12, 12, 0.7);
  
 }
-@media screen and (min-width:768px) {
-  .about-us-list{
-    margin-bottom: 60px;
-    max-width: 584px;
-  }
-}
+
 
 .about-us-item {
   margin-bottom: 20px;
@@ -72,40 +34,60 @@
 .about-us-item:last-child{
   margin-bottom: 40px;
 }
-.about-us-text {
- 
 
-}
-@media screen and (min-width:768px) {
-  .about-us-text{
-    font-size: 16px;
-    line-height: 1.25;
-  }
-    .about-us-item:last-child {
-      margin-bottom: 60px;
-    }
-}
-
-.about-us-btn {
+.about-us-btn{
+  display: block;
+  cursor: pointer;
+  padding-top: 15px;
+  padding-left: 38px;
+  padding-right: 37px;
+  padding-bottom: 15px;
   border-radius: 16px;
-    max-width: 160px;
-    height: 48px;
-    background: #3350e9;
-    border: none;
-    padding: 15px 38px;
-}
-.about-us-btn:focus{
-  background: #1f3cd4;
-}
-.about-us-btn-link{
-  font-family: "Gilroy", sans-serif;
+  max-width: 160px;
+  height: 48px;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.29;
+    line-height: 1.3;
     text-align: center;
     color: #fbfbfb;
-    width: 85px;
-    height: 18px;
-    scroll-behavior: smooth;
-   
+    background: #3350e9;
+    border: none;
 }
+ .about-us-btn:hover,
+ .about-us-btn:focus {
+   background-color: #1F3CD4;
+ }
+ 
+    @media only screen and (min-width:768px) {
+      .about-us-text-cont {
+        padding: 80px 60px;
+        max-width: 704px;
+        border-radius: 50px;
+        margin-bottom: 40px;
+      }
+  
+      .about-us-title {
+        font-size: 48px;
+      }
+  
+      .about-us-list {
+        font-size: 16px;
+        line-height: 1.2;
+      }
+  
+      .about-us-item:last-child {
+        margin-bottom: 60px;
+      }
+  
+      @media only screen and (min-width:1280px) {
+        .about-us-container {
+          display: flex;
+          gap: 40px;
+        }
+  
+        .about-us-text-cont {
+          max-width: 580px;
+          margin-bottom: 0px;
+        }
+      }
+    }
