@@ -26,7 +26,9 @@
         width: 34px;
         height: 34px;
     }
-
+.icons-social:hover, .icons-social:focus {
+    fill:#3350e9;
+}
     .tell-footer {
         font-family: "Gilroy", sans-serif;
         font-weight: 500;
