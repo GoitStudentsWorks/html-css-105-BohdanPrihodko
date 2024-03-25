@@ -204,3 +204,17 @@
                 justify-content: space-between;
         }
     }
+    @media only screen and (min-width:1280px) {
+        .container-footer {
+                max-width: 1216px;
+                
+            }
+            .top-line-footer {
+                display: flex;
+            }
+            .tell-footer {
+        position: relative;
+            top: 0px; 
+            left:860px;
+            }
+    }
