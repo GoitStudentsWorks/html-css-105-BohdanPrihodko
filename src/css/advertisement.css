@@ -1,6 +1,4 @@
-.advertisement-section{
-    margin-bottom: 60px;
-}
+
 
 .visually-hidden {
     position: absolute;
@@ -27,15 +25,6 @@
     background-position: center;
 }
 
-
-/* Коли екран менший за фон(335 пікселів) */
-/* то він приліпає до країв, тож поки на такі */
-/* випадки поставлю марджини по 20 з права і зліва */
-@media only screen and (max-width:375px){
-    .container{
-        margin: 0 20px;
-    }
-}
 
 @media only screen and (min-resolution:192dpi){
     .advertisement-container{
@@ -74,6 +63,14 @@
     padding-bottom: 15px;
     padding-left: 44px;
     padding-right: 43px;
+    transition: color 250ms linear, background-color 250ms linear;
+}
+
+.advertisement-link:hover,
+.advertisement-link:focus{
+    color: #0c0c0c;
+    background: #fbfbfb;
+
 }
 
 @media only screen and (min-width:768px){
@@ -97,10 +94,6 @@
     
     }
     
-
-    .advertisement-section{
-        margin-bottom: 80px;
-    }
     
 
 }
