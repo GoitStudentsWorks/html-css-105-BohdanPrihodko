@@ -34,6 +34,7 @@
     cursor: pointer;
     background: transparent;
     border: none;
+    transition: color .25s linear, background-color .25s linear;
 }
 
 .hero-btn-scroll:hover, 
