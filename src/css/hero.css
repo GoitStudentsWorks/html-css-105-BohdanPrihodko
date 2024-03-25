@@ -69,6 +69,10 @@
         display: flex;
         justify-content: space-between;
     }
+    .hero-first-box {
+        margin-bottom: 40px;
+        width: 100%;
+    }  
     .hero-second-box {
         flex-direction: column;
         margin-bottom: 40px;
@@ -86,10 +90,7 @@
         letter-spacing: -0.02em;
         width: 480px;
     }
-    .hero-first-box {
-        margin-bottom: 40px;
-        width: 100%;
-    }
+
 }
 
 /* Desktop hero */
@@ -98,8 +99,6 @@
     .hero-main-title {
         font-size: 72px;
         line-height: 0.875;
-    }
-    .hero-main-title { 
         width: 70%;
     }
 }
