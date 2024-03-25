@@ -42,7 +42,6 @@
 }
 
 .title-sale {
-    font-family: "Gilroy", sans-serif;
     font-weight: 600;
     font-size: 24px;
     line-height: 1.17;
@@ -52,7 +51,6 @@
 }
 
 .title-product {
-    font-family: "Gilroy", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
@@ -62,7 +60,6 @@
 }
 
 .price-container {
-    font-family: "Gilroy", sans-serif;
     font-weight: normal;
     display: flex;
     align-items: center;
@@ -95,7 +92,6 @@
 }
 
 .text-prodact {
-    font-family: "Gilroy", sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.29;
@@ -106,7 +102,6 @@
 }
 
 .button {
-    font-family: "Gilroy", sans-serif;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.33;
@@ -122,3 +117,46 @@
     height: 32px;
 
 }
+
+@media screen and (min-width: 768px) {
+.sale-list {
+display: flex;
+flex-direction: column;
+margin: 0;
+padding: 0;
+list-style: none;
+align-items: flex-start;
+
+.sale-list-item {
+margin-bottom: 10px;
+}
+
+.watch-big {
+margin-left: 20px;
+}
+  
+}
+
+@media screen and (min-width: 1280px)
+
+.sale-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.sale-list-item {
+    margin-bottom: 10px;
+}
+.watch-big {
+    margin-left: 20px;
+}
+.prodact-main {
+margin-left: 40px;
+}
+   
+    }
