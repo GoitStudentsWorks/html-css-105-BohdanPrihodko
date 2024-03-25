@@ -5,40 +5,47 @@
     letter-spacing: -0.02em;
     color: #0c0c0c;
     margin-bottom: 24px;
+   
 }
 
 .sale-list {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: row;
     gap: 5px;
     width: 335px;
-
+    justify-content: center;
+    align-items: center;
+   
 }
 
 .sale-list-item {
-    width: 52px;
     gap: 5px;
-    border: 1px solid rgba(12, 12, 12, 0.05);
-    border-radius: 2px;
-    padding: 12px 14px;
+    border-radius: 16px;
+    max-width: 80px;
+    max-height: 80px;
+    margin-bottom: 20px;
+    background-color: #f3f3f3;
+    padding: 13px 14px;
+
 }
 
 .watch-big {
-    width: 235px;
-    border: 1px solid rgba(12, 12, 12, 0.05);
-    border-radius: 2px;
+    border-radius: 30px;
     padding: 50px;
-    margin-right: 20px;
-    margin-left: 20px;
     display: block;
-    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: #f3f3f3;
+    max-width: 335px;
+    min-height: 385px;
+  
 }
 
 .prodact-main {
     background-color: #3350E9;
     border-radius: 30px;
     width: 335px;
-    padding: 48px 28px 429px;
+    padding: 48px 28px;
+   
 }
 
 .title-sale {
@@ -101,6 +108,14 @@
     margin-bottom: 28px;
 }
 
+
+button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 279px;
+}
+
 .button {
     font-weight: 500;
     font-size: 12px;
@@ -109,54 +124,97 @@
     background-color: #3350E9;
     color: white;
     text-align: center;
-    gap: 8px;
     border: 1px solid rgba(251, 251, 251, 0.5);
     border-radius: 8px;
     padding: 8px 12px;
-    width: 123px;
-    height: 32px;
-
+    margin-bottom: 5px;
 }
 
 @media screen and (min-width: 768px) {
-.sale-list {
-display: flex;
-flex-direction: column;
-margin: 0;
-padding: 0;
-list-style: none;
-align-items: flex-start;
+    .sale-list {
+     flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+  max-width: 132px;
+  max-height: 558px;
 
-.sale-list-item {
-margin-bottom: 10px;
-}
 
-.watch-big {
-margin-left: 20px;
-}
-  
-}
 
-@media screen and (min-width: 1280px)
+        }
+        
+    .sale-list-item {
+        max-width: 132px;
+        max-height: 132px;
+        margin: 0;
+    }
+    .sidebar {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        margin-bottom: 40px;
+        justify-content: space-between;
+        
+    }
+    
+         .sale-title {
+         font-size: 48px; 
+         line-height: 0.92;  
+         margin-bottom: 40px;
+         }
+   
+      .watch-big {
+        max-width: 552px;
+        max-height: 558px;
+        padding: 80px 112px;
+        margin: 0;
+    }
 
-.sale-list {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    align-items: flex-start;
-    margin-bottom: 10px;
-}
+    .prodact-main {
+     width: 704px;
+     padding: 60px;
+     align-items: flex-start;
 
-.sale-list-item {
-    margin-bottom: 10px;
-}
-.watch-big {
-    margin-left: 20px;
-}
-.prodact-main {
-margin-left: 40px;
-}
    
     }
+        button-container {
+        flex-direction: row;
+        gap: 8px;   
+        }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+     .sidebar-desctop {
+
+        display: flex;
+            flex-direction: row;
+     }
+
+    .sale-list {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        align-items: flex-start;
+        margin-bottom: 10px;
+        max-width: 1280px;
+    }
+    
+   
+    .sale-list-item {
+        margin-bottom: 10px;
+    }
+
+    .watch-big {
+        margin-left: 20px;
+    }
+
+    .prodact-main {
+        margin-left: 40px;
+        max-width: 1280px;
+        flex: 1;
+    }
+
+}
