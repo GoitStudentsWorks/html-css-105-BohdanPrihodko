@@ -1,3 +1,6 @@
+.reviews {
+  margin-bottom: 60px;
+}
 .reviews-title{
     font-family: "Gilroy", sans-serif;
         font-weight: 600;
@@ -9,9 +12,7 @@
         margin-bottom: 24px;
         
 }
-.reviews {
-    margin-bottom: 60px;
-}
+
 .feedback-list {
     display: flex;
     margin-left: auto;
@@ -28,10 +29,28 @@ display: flex;
         padding: 32px 36px;
         max-width: 335px;
         background: #f3f3f3;
-        gap: 8px;
+          gap: 8px;
+        }
         
-        
-
+.reviews-list-title {
+      font-family: "Gilroy", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px; 
+        line-height: 1.25;
+        letter-spacing: -0.02em;
+        text-align: center;
+        color: #0c0c0c;
+     }
+.reviews-list-text{
+font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px; 
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(12, 12, 12, 0.4);
 }
 
 .victoria {
@@ -42,9 +61,12 @@ display: none;
 }
 @media only screen and (min-width: 768px) {
   .reviews-title{
+    font-size: 48px;
+    line-height: .91667;
     margin-bottom: 40px;
-  }
-.feedback-list {
+  } 
+    
+ .feedback-list {
     display: flex;
         flex-direction: row;
             flex-wrap: wrap;
@@ -53,7 +75,7 @@ display: none;
             
     }
 
-    .reviews-list{
+    .reviews-list {
     flex-direction: column;
         max-width: 344px;
         gap: 8px;
@@ -63,8 +85,8 @@ display: none;
     display: flex;
   }
  
-}
-.reviews-list-title {
+
+ .reviews-list-title {
     font-family: "Gilroy", sans-serif;
         font-weight: 500;
         font-size: 18px;
@@ -73,32 +95,23 @@ display: none;
         letter-spacing: -0.02em;
         text-align: center;
         color: #0c0c0c;
+ }
+ .reviews-list-text {
+  font-size: 16px;
+  line-height: 20px;
+    line-height: 1.25
+  }
 }
 
-.reviews-list-text {
-    font-family: "Gilroy", sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-    
-        
-        line-height: 1.25;
-        letter-spacing: -0.02em;
-        text-align: center;
-        color: rgba(12, 12, 12, 0.4);
-}
 @media only screen and (min-width: 1280px) {
   .feedback-list {
     flex-direction: row;
     gap: 20px;
-    
   }
   .reviews-list{
-   
     max-width: 370px;
-    
-    
-
   }
+
   .anastasia{
     display: flex;
   }
