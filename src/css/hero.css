@@ -23,7 +23,7 @@
     width: 99%;
 }
 
-.hero-btn-scroll {
+.hero-link-scroll {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.28571;
@@ -37,8 +37,8 @@
     transition: color .25s linear, background-color .25s linear;
 }
 
-.hero-btn-scroll:hover, 
-.hero-btn-scroll:focus {
+.hero-link-scroll:hover, 
+.hero-link-scroll:focus {
     color: #3350e9; 
 }
 
