@@ -35,13 +35,12 @@
   margin-bottom: 40px;
 }
 
-.about-us-btn{
+.about-us-btn-link{
   display: block;
   cursor: pointer;
   padding-top: 15px;
   padding-left: 38px;
   padding-right: 37px;
-  padding-bottom: 15px;
   border-radius: 16px;
   max-width: 160px;
   height: 48px;
@@ -51,10 +50,9 @@
     text-align: center;
     color: #fbfbfb;
     background: #3350e9;
-    border: none;
 }
- .about-us-btn:hover,
- .about-us-btn:focus {
+ .about-us-btn-link:hover,
+ .about-us-btn-link:focus {
    background-color: #1F3CD4;
  }
  
