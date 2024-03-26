@@ -34,7 +34,6 @@ margin-bottom: 24px;
 
 
   .catalog-item-name {
-    font-family: "Gilroy", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.25;
@@ -48,7 +47,6 @@ margin-bottom: 24px;
    
   }
   .catalog-item-price {
-    font-family: "Gilroy", sans-serif;
     font-weight: 400;
     font-size: 14px; 
     line-height: 1.29;
@@ -72,6 +70,7 @@ margin-bottom: 24px;
     padding: 16px 32px;
     margin-left: auto;
     margin-right: auto;
+    transition: color 250ms linear, background-color 250ms linear;
   }
   .btn:hover,
   .btn:focus {
