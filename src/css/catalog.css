@@ -1,130 +1,132 @@
 .catalog-title {
-font-weight: 600;
-font-size: 32px; 
-line-height: 1;
-letter-spacing: -0.02em;
-color: #0c0c0c;
-margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 32px; 
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-bottom: 24px;
 }
 
 .catalog-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content:space-between;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content:space-between;
+  margin-bottom: 40px;
+}
+
+
+.catalog-item {
+  background: #f3f3f3;
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  border-radius: 30px;
+  max-width: 335px;
+  max-height: 414px;
+  padding: 24px 28px 24px 28px;
+}
+
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.catalog-item-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-top: 28px;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 280px;
+}
+
+.catalog-item-price {
+  font-weight: 400;
+  font-size: 14px; 
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgba(12, 12, 12, 0.5);
+}
+
+.btn {
+  min-width: 160px;
+  height: 48px;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  text-align: center;
+  background-color: #3350E9;
+  color: #fbfbfb;
+  cursor: pointer;
+  border-radius: 16px;
+  display: block;
+  border: none;
+  padding: 16px 32px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: color 250ms linear, background-color 250ms linear;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #1F3CD4;
+}
+
+@media screen and (max-width: 767px) {
+  .catalog-item.hide-on-mob {
+    display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+  .catalog-section {
+    margin: 0 auto;
+  }
+  .catalog-title {
+    font-size: 48px;
+    line-height: 0.92;
     margin-bottom: 40px;
   }
-
-
+  .catalog-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 32px;
+  }
   .catalog-item {
-    background: #f3f3f3;
-    border: 1px solid rgba(12, 12, 12, 0.05);
-    border-radius: 30px;
-    max-width: 335px;
-    max-height: 414px;
-    padding: 24px 28px 24px 28px;
-  
-
+    max-width: calc((100% - 16px) / 2 );
+    padding: 24px 32px 24px 32px;
   }
-  .img-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-
   .catalog-item-name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: -0.02em;
-    color: #0c0c0c;
-    margin-top: 28px;
-    margin-bottom: 8px;
-    white-space: nowrap;
-    overflow: hidden;
-    max-width: 280px;
-   
-  }
-  .catalog-item-price {
-    font-weight: 400;
-    font-size: 14px; 
-    line-height: 1.29;
-    letter-spacing: -0.02em;
-    color: rgba(12, 12, 12, 0.5);
+    font-size: 20px; 
+    line-height: 1;  
+    text-overflow: ellipsis;
+    margin-top: 20px; 
   }
   .btn {
-    min-width: 160px;
-    height: 48px;
-    font-family: "Gilroy", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.28;
-    text-align: center;
-    background-color: #3350E9;
-    color: #fbfbfb;
-    cursor: pointer;
-    border-radius: 16px;
-    display: block;
-    border: none;
-    padding: 16px 32px;
-    margin-left: auto;
-    margin-right: auto;
-    transition: color 250ms linear, background-color 250ms linear;
+    display: none;
   }
-  .btn:hover,
-  .btn:focus {
-    background-color: #1F3CD4;
+}
+
+@media only screen and (min-width: 1280px) {
+
+  .catalog-list {
+    column-gap: 23px;
   }
 
-  @media screen and (max-width: 767px) {
-    .catalog-item.hide-on-mob {
-        display: none;
-    }
+  .catalog-item {
+    max-width: calc((100% - 64px) / 3);
   }
 
-  @media only screen and (min-width: 768px) {
-    .catalog-section {
-      margin: 0 auto;
-    }
-    .catalog-title {
-        margin-bottom: 40px;
-    }
-    .catalog-list {
-        flex-direction: row;
-        flex-wrap: wrap;
-        column-gap: 16px;
-        row-gap: 32px;
-    }
-    .catalog-item {
-        max-width: calc((100% - 16px) / 2 );
-        padding: 24px 32px 24px 32px;
-      }
-
-      .catalog-item-name {
-        font-size: 20px; 
-        line-height: 1;  
-        text-overflow: ellipsis;
-        margin-top: 20px;
-       
-      }
-      .btn {
-        display: none;
-      }
+  .catalog-item-name {
+    max-width: 304px;
   }
-
-  @media only screen and (min-width: 1280px) {
-
-    .catalog-list {
-      column-gap: 23px;
-    }
-
-    .catalog-item {
-      max-width: calc((100% - 64px) / 3);
-    }
-    .catalog-item-name {
-      max-width: 304px;
-    }
-  }
+}
 
 
