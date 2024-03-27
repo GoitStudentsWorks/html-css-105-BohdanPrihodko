@@ -98,6 +98,7 @@
     flex-wrap: wrap;
     column-gap: 16px;
     row-gap: 32px;
+    margin-bottom: 0;
   }
   .catalog-item {
     max-width: calc((100% - 16px) / 2 );
