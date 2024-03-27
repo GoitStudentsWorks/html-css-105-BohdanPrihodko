@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/project-work-grp16/",
+    "build": "vite build --base=/html-css-105-BohdanPrihodko/",
     "preview": "vite preview"
   },
   "devDependencies": {
