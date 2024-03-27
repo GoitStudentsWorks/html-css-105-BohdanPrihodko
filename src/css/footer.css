@@ -25,9 +25,11 @@
         padding: 8px;
         width: 34px;
         height: 34px;
+        opacity: 0.8;
     }
 .icons-social:hover, .icons-social:focus {
-    fill:#3350e9;
+    opacity: 1;
+    
 }
     .tell-footer {
         font-family: "Gilroy", sans-serif;
@@ -165,7 +167,7 @@
                     line-height:1.3;
                  }
                                  .title-footer {
-                                    width: 533px;
+                                    width: 524px;
                                     margin-bottom: 100px;
                                     margin-left: 50px;
                                     margin-right: 50px;
